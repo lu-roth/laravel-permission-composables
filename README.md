@@ -23,3 +23,14 @@ Expected format of your user resource:
     name: string
     permissions: Permission[]
     }
+
+
+Usage:
+
+    const rolesAndPermissions = useRolesAndPermissions();
+    rolesAndPermissions.hasRole('admin');
+
+    OR
+
+    const { hasRole } = useRolesAndPermissions();
+    hasRole('admin');
